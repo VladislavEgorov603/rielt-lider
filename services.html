@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Риелт-Лидер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__info">
+      <div class="container">
+        <div class="header__info-inner">
+          <a href="index.html" class="logo">
+            <img class="logo__img" src="./images/logo.png" alt="logo">
+          </a>
+          <div class="header__contacts">
+            <a href="tel:89139994777" class="header__contacts-phone">+7 (913) 999 47-77</a>
+            <span class="header__contacts-schedule">г. Горно-Алтайск, ул. Чаптынова, д.17/1, оф.1; Пн-Пт с 09:00 до 18:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__row">
+      <a href="index.html" class="logo-min"><img src="./images/logo-min.png" alt="logo" class="logo__img-min"></a>
+      <nav class="menu">
+        <div class="container">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#about" class="menu__link">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#services" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#contacts" class="menu__link">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <a href="katalog.html" class="menu__link">Каталог</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="header__btn">
+        <span>___</span>        <span>___</span>
+        <span>___</span>
+      </button>
+    </div>
+    <div class="header__drop-menu">
+      <ul class="drop-menu__list">
+        <li class="drop-menu__item">
+          <a href="index.html" class="drop-menu__link">Главная</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="index.html#about" class="drop-menu__link">О компании</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="index.html#services" class="drop-menu__link">Услуги</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="index.html#contacts" class="drop-menu__link">Контакты</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="katalog.html" class="drop-menu__link">Каталог</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="service">
+    
+  </section>
+
+  <section class="product__form">
+    <h2 class="product__form-title">Консультируем бесплатно</h2>
+    <span class="product__form-subtitle">Выберите необходимые услуги и оставьте заявку на консультацию</span>
+    <form class="telegram-form telegram-form--service">
+      <div class="service__form">
+        <div class="service__checkboxes">
+        <div class="service__checkbox-group">
+          <h2 class="service__title">Покупателям</h2>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-1" type="checkbox" name="checkbox-1"/>
+            <label class="telegram-form__label" for="checkbox-1">Покупка квартиры</label>
+          </div>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-2" type="checkbox" name="checkbox-2"/>
+            <label class="telegram-form__label" for="checkbox-2">Помощь в получении ипотеки</label>
+          </div>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-3" type="checkbox" name="checkbox-3"/>
+            <label class="telegram-form__label" for="checkbox-3">Помощь в использовании материнского капитала</label>
+          </div>
+        </div>
+
+        <div class="service__checkbox-group">
+          <h2 class="service__title">Владельцам</h2>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-4" type="checkbox" name="checkbox-4"/>
+            <label class="telegram-form__label" for="checkbox-4">Продажа квартиры</label>
+          </div>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-5" type="checkbox" name="checkbox-5"/>
+            <label class="telegram-form__label" for="checkbox-5">Перевод жилого помещения в нежилое</label>
+          </div>
+        </div>
+
+        <div class="service__checkbox-group">
+          <h2 class="service__title">Арендаторам</h2>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-6" type="checkbox" name="checkbox-6"/>
+            <label class="telegram-form__label" for="checkbox-6">Аренда квартиры или комнаты</label>
+          </div>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-7" type="checkbox" name="checkbox-7"/>
+            <label class="telegram-form__label" for="checkbox-7">Аренда коммерческой недвижимости</label>
+          </div>
+        </div>
+
+        <div class="service__checkbox-group">
+          <h2 class="service__title">Арендодателям</h2>
+          <div class="service__checkbox-row">
+            <input class="telegram-form__checkbox" id="checkbox-8" type="checkbox" name="checkbox-6"/>
+            <label class="telegram-form__label" for="checkbox-8">Курация квартиры</label>
+          </div>
+        </div>
+      </div>
+
+        <div class="service__input-wrapper">
+          <input class="telegram-form__input" type="text" name="name" placeholder="Имя" autocomplete="off" />
+          <input class="telegram-form__input telegram-form__tel" type="tel" name="phone" placeholder="Телефон"
+            autocomplete="off" />
+          <button class="telegram-form__btn" type="submit">Отправить</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <h1 class="footer__title">Риелт-Лидер</h1>
+        <div class="footer__items">
+          <div class="footer__item">
+            <h2 class="footer__item-title">Навигация</h2>
+            <ul class="footer__pages">
+              <li class="footer__pages-item"><a href="/index.html" class="footer__item-page">Главная</a></li>
+              <li class="footer__pages-item"><a href="/services.html" class="footer__item-page">Услуги</a></li>
+              <li class="footer__pages-item"><a href="/katalog.html" class="footer__item-page">Каталог</a></li>
+              <li class="footer__pages-item"><a href="/vacancies.html" class="footer__item-page">Вакансии</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h2 class="footer__item-title">Связаться с нами</h2>
+            <span class="footer__item-address">
+              Головной офис:	г. Горно-Алтайск, ул. Чаптынова, д.17/1, оф.1
+            </span>
+            <span class="footer__item-address">
+              Офис Чемал:	с. Чемал пер. Торговый 1
+            </span>
+            <span class="footer__item-phone">Телефон: <a href="tel:89139994777" class="footer__item-phone-link">+7 (913) 999 47-77</a></span>
+          </div>
+          <div class="footer__item">
+            <h2 class="footer__item-title">Социальные сети</h2>
+            <ul class="footer__socials">
+              <li class="footer__socials-item"><a href="https://vk.com/rielterlider" class="footer__item-social">Вконтакте</a></li>
+              <li class="footer__socials-item"><a href="https://t.me/rielt_lider" class="footer__item-social">Телеграм</a></li>
+              <li class="footer__socials-item"><a href="https://ok.ru/group/52793121833037" class="footer__item-social">Одноклассники</a></li>
+              <li class="footer__socials-item"><a href="https://instagram.com/rielterlider?igshid=q4unvibqp3d" class="footer__item-social">Instagram</a></li>
+              <li class="footer__socials-item"><a href="https://www.youtube.com/channel/UCLz4p18xhse68kH2BTnmR9Q" class="footer__item-social">YouTube</a></li>
+              <li class="footer__socials-item"><a href="https://www.facebook.com/profile.php?id=100067107966044" class="footer__item-social">Facebook</a></li>
+            </ul>         
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/jquery-3.7.0.min.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/masked-input.js"></script>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/services.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <link rel="icon" href="./favicon.ico" type="image/ico">
+  <title>Риелт-Лидер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;family=Open+Sans&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__info">
+      <div class="container">
+        <div class="header__info-inner">
+          <a href="index.html" class="logo">
+            <img class="logo__img" src="./images/logo.png" alt="logo">
+          </a>
+          <div class="header__contacts">
+            <a href="tel:89139994777" class="header__contacts-phone">+7 (913) 999 47-77</a>
+            <span class="header__contacts-schedule">г. Горно-Алтайск, ул. Чаптынова, д.17/1, оф.1; Пн-Пт с 09:00 до 18:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__row">
+      <a href="index.html" class="logo-min"><img src="./images/logo-min.png" alt="logo" class="logo__img-min"></a>
+      <nav class="menu">
+        <div class="container">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#about" class="menu__link">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#services" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="index.html#contacts" class="menu__link">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <a href="katalog.html" class="menu__link">Каталог</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="header__btn">
+        <span>___</span>        <span>___</span>
+        <span>___</span>
+      </button>
+    </div>
+    <div class="header__drop-menu">
+      <ul class="drop-menu__list">
+        <li class="drop-menu__item">
+          <a href="index.html" class="drop-menu__link">Главная</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="index.html#about" class="drop-menu__link">О компании</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="index.html#services" class="drop-menu__link">Услуги</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="index.html#contacts" class="drop-menu__link">Контакты</a>
+        </li>
+        <li class="drop-menu__item">
+          <a href="katalog.html" class="drop-menu__link">Каталог</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <nav class="katalog-menu">
+    <div class="container">
+      <ul class="katalog-menu__list">
+        <li class="katalog-menu__item katalog-menu__item--active" id="apartment">
+          <a href="#" class="katalog-menu__link">Квартиры и комнаты</a>
+        </li>
+        <li class="katalog-menu__item" id="house">
+          <a href="#" class="katalog-menu__link">Частный сектор</a>
+        </li>
+        <li class="katalog-menu__item" id="rent">
+          <a href="#" class="katalog-menu__link">Аренда</a>
+        </li>
+        <li class="katalog-menu__item" id="commercial">
+          <a href="#" class="katalog-menu__link">Коммерческая недвижимость</a>
+        </li>
+      </ul>
+      <div class="katalog-menu__content">
+        <div class="filter-apartment">
+          <div class="filter-apartment__rooms">
+            <span class="filter-apartment__rooms-label">Кол-во комнат</span>
+            <div class="filter-apartment__rooms-btns">
+              <button class="filter-apartment__rooms-btn" id="0">Студия</button>
+              <button class="filter-apartment__rooms-btn" id="1">1к.</button>
+              <button class="filter-apartment__rooms-btn" id="2">2к.</button>
+              <button class="filter-apartment__rooms-btn" id="3">3к.</button>
+              <button class="filter-apartment__rooms-btn" id="4">4+</button>
+            </div>
+          </div>
+          <div class="filter__price">
+            <span class="filter__price-label">Стоимость</span>
+            <div class="filter__price-inputs">
+              <input type="number" class="filter__price-min" placeholder="от" min="0">
+              <input type="number" class="filter__price-max" placeholder="до" min="0">
+            </div>
+          </div>
+          <div class="filter__area">
+            <span class="filter__area-label">Площадь</span>
+            <div class="filter__area-inputs">
+              <input type="number" class="filter__area-min" placeholder="от" min="0">
+              <input type="number" class="filter__area-max" placeholder="до" min="0">
+            </div>
+          </div>
+          <div class="filter__place">
+            <span class="filter__place-label">Населенный пункт</span>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" list="place-list" placeholder="Поиск" class="filter__place-input">
+              <datalist class="filter__place-list" id="place-list">
+                <!-- addTownsInList in katalog.js -->
+              </datalist>
+            </div>
+          </div>
+        </div>
+        <button class="filter__btn">Показать предложения</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="katalog">
+    <div class="container">
+      <div class="katalog__inner">
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <h1 class="footer__title">Риелт-Лидер</h1>
+        <div class="footer__items">
+          <div class="footer__item">
+            <h2 class="footer__item-title">Навигация</h2>
+            <ul class="footer__pages">
+              <li class="footer__pages-item"><a href="/index.html" class="footer__item-page">Главная</a></li>
+              <li class="footer__pages-item"><a href="/services.html" class="footer__item-page">Услуги</a></li>
+              <li class="footer__pages-item"><a href="/katalog.html" class="footer__item-page">Каталог</a></li>
+              <li class="footer__pages-item"><a href="/vacancies.html" class="footer__item-page">Вакансии</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h2 class="footer__item-title">Связаться с нами</h2>
+            <span class="footer__item-address">
+              Головной офис:	г. Горно-Алтайск, ул. Чаптынова, д.17/1, оф.1
+            </span>
+            <span class="footer__item-address">
+              Офис Чемал:	с. Чемал пер. Торговый 1
+            </span>
+            <span class="footer__item-phone">Телефон: <a href="tel:89139994777" class="footer__item-phone-link">+7 (913) 999 47-77</a></span>
+          </div>
+          <div class="footer__item">
+            <h2 class="footer__item-title">Социальные сети</h2>
+            <ul class="footer__socials">
+              <li class="footer__socials-item"><a href="https://vk.com/rielterlider" class="footer__item-social">Вконтакте</a></li>
+              <li class="footer__socials-item"><a href="https://t.me/rielt_lider" class="footer__item-social">Телеграм</a></li>
+              <li class="footer__socials-item"><a href="https://ok.ru/group/52793121833037" class="footer__item-social">Одноклассники</a></li>
+              <li class="footer__socials-item"><a href="https://instagram.com/rielterlider?igshid=q4unvibqp3d" class="footer__item-social">Instagram</a></li>
+              <li class="footer__socials-item"><a href="https://www.youtube.com/channel/UCLz4p18xhse68kH2BTnmR9Q" class="footer__item-social">YouTube</a></li>
+              <li class="footer__socials-item"><a href="https://www.facebook.com/profile.php?id=100067107966044" class="footer__item-social">Facebook</a></li>
+            </ul>         
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/jquery-3.7.0.min.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/masked-input.js"></script>
+
+
+  <script src="/js/main.js"></script>
+  <script src="/js/katalog.js"></script>
+
+</body>
+
+</html>
